@@ -48,4 +48,45 @@ console.log(p,q,r)
 
 
 
+// iterate over properties or entries of an object.
+const obj = {France: "Paris", England: "London"}
+
+// for (const country of Object.keys(obj)){
+//   const capital = obj[country]
+//   console.log(capital, country)
+// }
+
+for (const [country, capital] of Object.entries(obj)){
+  console.log(country, capital)
+}
+
+//OBJECT DESTRUCTURING
+
+const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+
+const openingHours = {
+  [weekdays[3]]: {
+    open: 12,
+    close: 22,
+  },
+  [weekdays[4]]: {
+    open: 11,
+    close: 23,
+  },
+  [weekdays[5]]: {
+    open: 0, // Open 24 hours
+    close: 24,
+  },
+};
+
+let student1 = {firstName: "John", secondName: "Doe", dept: "Physics"}
+let student2 = {firstName: "Marwan", secondName: "Ahmed", dept: "Chemistry"}
+
+
+function displayStudentInfo(obj){
+  var {first, last} = obj;
+  return `Your full name is ${first} ${last}`
+}
+
+
 
