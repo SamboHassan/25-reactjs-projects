@@ -2,8 +2,8 @@ import "./App.css";
 // import Accordian from "./components/accordian";
 // import ModalTest from "./components/custom-modal-popup/modal-test";
 // import TabTest from "./components/custom-tabs/tab-test";
-import FeatureFlags from "./components/feature-flag";
-import FeatureFlagGlobalState from "./components/feature-flag/context";
+// import FeatureFlags from "./components/feature-flag";
+// import FeatureFlagGlobalState from "./components/feature-flag/context";
 // import GithubProfileFinder from "./components/github-profile-finder";
 // import ImageSlider from "./components/image-slider";
 // import LightDarkMode from "./components/light-dark-mode";
@@ -19,7 +19,7 @@ import FeatureFlagGlobalState from "./components/feature-flag/context";
 // import TreeView from "./components/tree-view";
 // import menus from "./components/tree-view/data";
 // import UseFetchHookTest from "./components/use-fetch/test";
-// import UseOnclickOutsideTest from "./components/use-outside-click/test";
+import UseOnclickOutsideTest from "./components/use-outside-click/test";
 // import UseWindowResizeTest from "./components/use-window-resize/test";
 
 function App() {
@@ -71,18 +71,18 @@ function App() {
       {/* <TicTacToe/> */}
 
       {/* Feature Flag IMplementation  */}
-      <FeatureFlagGlobalState>
+      {/* <FeatureFlagGlobalState>
         <FeatureFlags />
-      </FeatureFlagGlobalState>
+      </FeatureFlagGlobalState> */}
 
       {/* useFetch - Custom Hook Test*/}
       {/* <UseFetchHookTest/> */}
 
       {/* Use Onclick Outside Hook Test */}
-      {/* <UseOnclickOutsideTest/> */}
+      <UseOnclickOutsideTest />
 
       {/* Use Window Resize Hook Test */}
-      {/* <UseWindowResizeTest/> */}
+      {/* <UseWindowResizeTest /> */}
 
       {/* Scroll to Top and Bottom */}
       {/* <ScrollToTopAndBottom/> */}
